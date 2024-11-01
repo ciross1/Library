@@ -1,0 +1,168 @@
+:root {
+    --white: #fff;
+    --light-grey: #f5f6f7;
+    --dark-grey: #040422;
+    --yellow: #e1dfdb;
+    --golden-yellow: #efd1a4;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    
+    box-sizing: border-box;
+  }
+
+  
+  body {
+    background-color: var(--dark-grey);
+    
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  h1 {
+    color: var(--light-grey);
+    margin: 20px 0 40px 0;
+  }
+  
+  .todo-app {
+
+    background-color: var(--white);
+   
+  
+    border: 10px solid var(--yellow);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+     gap: 10px;
+  }
+  
+  
+  
+  .btn:hover {
+    background-image: linear-gradient(#000000, #fbfbfb);
+  }
+ 
+  
+  .large-btn {
+    max-height: fit-content;
+    font-size: 1.2rem;
+    align-self: center;
+    justify-self: center;
+    position:fixed;
+     margin: -20px;
+    border-radius: 2px;
+    background-color: #040422;
+    color: #e1dfdb;
+    
+  }
+  
+ 
+
+  
+  .task-form {
+    padding: 30px;
+    display: flex;
+    position: fixed;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 15px;
+    flex-direction: column;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   max-width: 300px ;
+    
+  
+  }
+
+
+  .close-task-form-btn{
+    position: absolute;
+    right: 20px
+  
+    
+  
+  }
+
+
+  .input-missing-author-title{
+   
+   margin-top: 50px;
+   
+   
+  }
+
+  .totalBooks{
+    color: rgb(7, 16, 69);
+    
+    overflow: auto;        /* Agrega el scroll tanto horizontal como vertical */
+    border: 10px solid #000000c5; /* Opcional: agrega un borde para visualizar el div */
+    border-radius: 5px;
+    padding: 30px;
+    
+    
+    
+ 
+
+   
+
+  }
+
+ 
+  footer {
+    position: fixed;         /* Fija el footer en la ventana */
+    bottom: 0;               /* Ubica el footer en la parte inferior */
+    left: 0;                 /* Alinea el footer a la izquierda */
+    padding: 20px;           /* Espaciado interno */
+    color: #ffffff;          /* Color de texto */
+  
+    font-size: 15px;         /* Tamaño de la fuente */
+}
+
+
+  .hidden {
+    display: none;
+  }
+
+
+  
+  @media (min-width: 576px) {
+    .todo-app,
+    .task-form {
+     overflow-y: auto;
+      width: 400px;
+      max-height: 500px;
+
+
+    }
+  
+    .task-form-label {
+      font-size: 1.5rem;
+    }
+  
+    #title-input,
+    #date-input {
+      height: 2rem;
+    }
+  
+    #title-input,
+    #date-input,
+    #description-input {
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+  }
+
+

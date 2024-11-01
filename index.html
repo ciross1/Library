@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="todo-app">
+            <button id="button-open-task" class="btn large-btn">
+                <p>Add a new book</p>
+            </button>
+            <form class="task-form hidden" id="task-form">
+                <div clas="task-form-header">
+                    <button id="close-task-form-btn" class="close-task-form-btn" type="button">
+                        close
+                    </button>
+                </div>
+                <input id="input-add-book" placeholder="add book" />
+                <p class="input-missing-author-title"></p>
+                <input id="input-add-author" placeholder="add author">
+                <button id="addBookBtn" type="button">Add book and author</button>
+            </form>
+
+            <h3></h3>    
+            <h3 class="number-of-books"></h3>
+            <div id="totalBooks">:</div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Ciro
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
